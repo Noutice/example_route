@@ -31,7 +31,10 @@ import 'package:example_route/screens/settings_screen.dart';
               page: Like,
             ),
             AutoRoute(
-                path: 'LikesInfo', page: LikesInfo, name: 'LikesInfoRouter'),
+              path: 'LikesInfo',
+              page: LikesInfo,
+              name: 'LikesInfoRouter',
+            ),
           ],
         ),
         AutoRoute(

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:example_route/navigation/route.gr.dart';
 
-void main() => runApp(const MainWidget());
+void main() => runApp(MainWidget());
 
 class MainWidget extends StatelessWidget {
-  const MainWidget({super.key});
+  MainWidget({super.key});
+  final appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    final appRouter = AppRouter();
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routeInformationParser: appRouter.defaultRouteParser(),
